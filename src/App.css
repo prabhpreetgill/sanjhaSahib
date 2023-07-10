@@ -3,7 +3,14 @@
   background-image: url('./Media/backgroundsaroop.png');
   height: 100vh;
   background-size: cover;
-  background-position: -1px -250px;
+  background-position: -1px -100px;
+}
+
+@media screen and (min-width: 1441px){
+  .app{
+    background-position: -1px -50px;
+  }
+
 }
 
 .App-logo {

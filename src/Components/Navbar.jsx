@@ -49,7 +49,7 @@ function DrawerAppBar(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex'}}>
       <CssBaseline />
       <AppBar component="nav" elevation={0} sx={{background: 'transparent', position: 'sticky'}}>
         <Toolbar sx={{display: 'flex', justifyContent: 'center'}}>
@@ -59,20 +59,22 @@ function DrawerAppBar(props) {
                 aria-label="open drawer"
                 edge="start"
                 onClick={handleDrawerToggle}
-                sx={{ mr: 2, display: { sm: 'none' } }}
+                sx={{ mr: 2, display: { lg: 'none' } }}
                 >
                 <MenuIcon />
                 </IconButton>
                 <Button disableRipple disableFocusRipple disableTouchRipple disableElevation>
-                  <img src={Logo} alt='logo' style={{height: '150px'}}/>
+                  <Box sx={{height: {xs: '75px', sm: '100px'}}}>
+                    <img src={Logo} alt='logo' style={{maxHeight: '100%', maxWidth: '100%'}}/>
+                  </Box>
                 </Button>
             </div>
-          <div style={{display: { xs: 'none', sm: 'block'}}}>
+          <div style={{display: { xs: 'none', lg: 'block'}}}>
             <Box>
-                <Box sx={{ display: { xs: 'none', sm: 'block'}}}>
+                <Box sx={{ display: { xs: 'none', lg: 'block'}}}>
                     {navItems.map((item) => (
                     <Button key={item} sx={{ color: '#fff', margin: '0 80px'}} disableRipple>
-                        <Typography variant='h6' sx={{transitionDuration: '0.3s', '&:hover': {color: '#FFCC00', transitionDuration: '0.3s'}}}>
+                        <Typography variant='h6' sx={{transitionDuration: '0.3s', fontFamily: 'Open Sans','&:hover': {color: '#FFCC00', transitionDuration: '0.3s'}}}>
                             {item}
                         </Typography>
                     </Button>
@@ -96,7 +98,7 @@ function DrawerAppBar(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { xs: 'block', lg: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, backgroundColor: '#001041'},
           }}
         >

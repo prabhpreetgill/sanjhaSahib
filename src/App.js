@@ -11,14 +11,14 @@ function App() {
   return (
     <div className="App">
     <Navbar/>
-    <Box >
-      <Typography color={'white'} variant="h5">
+    <Box sx={{marginTop: 3}}>
+      <Typography color={'white'} sx={{fontSize: {xs: '1rem', sm: '2rem', md: '3rem', fontWeight: 'bold', fontFamily: 'Open Sans'}}}>
           ROAD TO PURAB MUBARAK
         </Typography>
         <Count/>
         <div style={{display: 'flex', justifyContent: 'center'}}>
-        <Box sx={{width: '50%'}}>
-          <Typography color={'white'}>
+        <Box sx={{width: {xs: '90%', sm: '50%'}}}>
+          <Typography color={'white'} sx={{fontSize: {xs: '0.8rem', sm: '1rem'}, wordSpacing: 3, fontFamily: 'Open Sans'}}>
             LET US ILLUMINATE OUR HOMES AND BUSINESSES, IGNITING THE BRILLIANCE WITHIN,
             AS WE HONOR HIS TEACHINGS OF LOVE, COMPASSION, AND UNITY.
             TOGETHER, LET OUR COLLECTIVE LIGHTS SHINE BRIGHTLY,

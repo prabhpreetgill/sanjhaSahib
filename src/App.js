@@ -19,7 +19,7 @@ function App() {
         <div style={{display: 'flex', justifyContent: 'center'}}>
         <Box sx={{width: {xs: '90%', sm: '50%'}}}>
           <Typography color={'white'} sx={{fontSize: {xs: '0.8rem', sm: '1rem'}, wordSpacing: 3, fontFamily: 'Open Sans'}}>
-            LET US ILLUMINATE OUR HOMES AND BUSINESSES, IGNITING THE BRILLIANCE WITHIN,
+            LET US ILLUMINATE OUR HOMES AND BUSINESSES,
             AS WE HONOR HIS TEACHINGS OF LOVE, COMPASSION, AND UNITY.
             TOGETHER, LET OUR COLLECTIVE LIGHTS SHINE BRIGHTLY,
             SPREADING THE MESSAGE OF PEACE AND HARMONY THROUGHOUT THE WORLD.

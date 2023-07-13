@@ -12,7 +12,7 @@ function App() {
     <div className="App">
     <Navbar/>
     <Box sx={{marginTop: 3}}>
-      <Typography color={'white'} sx={{fontSize: {xs: '1rem', sm: '2rem', md: '3rem', fontWeight: 'bold', fontFamily: 'Open Sans'}}}>
+      <Typography color={'white'} sx={{fontSize: {xs: '1.5rem', sm: '2rem', md: '3rem', fontWeight: 'bold', fontFamily: 'Open Sans'}}}>
           ROAD TO PURAB MUBARAK
         </Typography>
         <Count/>

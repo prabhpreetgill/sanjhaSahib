@@ -44,13 +44,6 @@ export default function Clock() {
             setMinn(Math.floor((distance % (hour)) / (minute)));
             setSecc(Math.floor((distance % (minute)) / second));
   
-          //do something later when date is reached
-          if (distance < 0) {
-            document.getElementById("headline").innerText = "It's my birthday!";
-            document.getElementById("countdown").style.display = "none";
-            document.getElementById("content").style.display = "block";
-            clearInterval(x);
-          }
           //seconds
         }, 0)
         }());
@@ -65,11 +58,6 @@ export default function Clock() {
             <li><span id="seconds">{secc}</span>Seconds</li>
             </ul>
             </div>
-        <div id="content" class="emoji">
-        <span>🥳</span>
-        <span>🎉</span>
-        <span>🎂</span>
-        </div>
         </div>
         )
     };

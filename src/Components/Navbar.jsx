@@ -74,7 +74,7 @@ function DrawerAppBar(props) {
                 <Box sx={{ display: { xs: 'none', lg: 'block'}}}>
                     {navItems.map((item) => (
                     <Button key={item} sx={{ color: '#fff', margin: '0 80px'}} disableRipple>
-                        <Typography variant='h6' sx={{transitionDuration: '0.3s', fontFamily: 'Open Sans','&:hover': {color: '#FFCC00', transitionDuration: '0.3s'}}}>
+                        <Typography sx={{transitionDuration: '0.3s', fontFamily: 'Open Sans','&:hover': {color: '#FFCC00', transitionDuration: '0.3s'}}}>
                             {item}
                         </Typography>
                     </Button>

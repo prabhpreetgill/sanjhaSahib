@@ -33,9 +33,8 @@ export default function Clock() {
     }
     //end
     
-    const countDown = new Date(birthday).getTime(),
-        x = setInterval(function() {    
-  
+    const countDown = new Date(birthday).getTime();
+    setInterval(function() {    
           const now = new Date().getTime(),
                 distance = countDown - now;
   

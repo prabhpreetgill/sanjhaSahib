@@ -8,7 +8,6 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
   /* background-position: -1px -100px; */
 }
 
@@ -16,6 +15,7 @@
 @media screen and (max-width:450px) {
   .App {
     background-image: url('./Media/mobilebackground.png');
+    height: 90vh;
   }
 }
 

@@ -9,7 +9,7 @@ import Count from './Components/Count';
 
 function App() {
   return (
-    <div className="App" style={{overflow: "-moz-hidden-unscrollable"}}>
+    <div className="App">
     <Navbar/>
     <Box sx={{marginTop: {xs: '60px', sm: 'initial'}}}>
       <Typography color={'white'} sx={{fontSize: {xs: '1rem', sm: '2rem'}}}>

@@ -8,9 +8,8 @@ import Count from './Components/Count';
 
 
 function App() {
-  let small = 0.75;
   return (
-    <div className="App" style={{overflow: "hidden"}}>
+    <div className="App" style={{overflow: "-moz-hidden-unscrollable"}}>
     <Navbar/>
     <Box sx={{marginTop: {xs: '60px', sm: 'initial'}}}>
       <Typography color={'white'} sx={{fontSize: {xs: '1rem', sm: '2rem'}}}>

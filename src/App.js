@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
     <Navbar/>
-    <Box sx={{position: 'relative', paddingTop: {xs: '30px', sm:'0px'}, top: {xs: 0, sm:'-60px'}}}>
+    <Box sx={{position: 'relative', paddingTop: {xs: '30px', sm:'0px'}, top: {xs: 0, sm:'-80px'}}}>
         <Typography color={'white'} sx={{fontSize: {xs: '1rem', sm: '2rem'}}}>
           ROAD TO PURAB MUBARAK
         </Typography>

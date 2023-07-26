@@ -15,7 +15,7 @@
 @media screen and (max-width:450px) {
   .App {
     background-image: url('./Media/mobilebackground.png');
-    height: 90vh;
+    height: 100vh;
   }
 }
 

@@ -52,9 +52,9 @@ function DrawerAppBar(props) {
     <Box sx={{ display: 'flex'}}>
       <CssBaseline />
       <AppBar component="nav" elevation={0} sx={{background: 'transparent', position: 'sticky'}}>
-        <Toolbar sx={{display: 'flex', justifyContent: 'center'}}>
-            <div style={{flex: 1, justifyContent: 'left'}}>
-                <IconButton
+        <Toolbar sx={{display: 'flex', justifyContent: 'left'}}>
+            <div>
+                {/* <IconButton
                 color="inherit"
                 aria-label="open drawer"
                 edge="start"
@@ -62,14 +62,14 @@ function DrawerAppBar(props) {
                 sx={{ mr: 2, display: { lg: 'none' } }}
                 >
                 <MenuIcon />
-                </IconButton>
+                </IconButton> */}
                 <Button disableRipple disableFocusRipple disableTouchRipple disableElevation>
                   <Box sx={{height: {xs: '75px', sm: '100px'}}}>
                     <img src={Logo} alt='logo' style={{maxHeight: '100%', maxWidth: '100%'}}/>
                   </Box>
                 </Button>
             </div>
-          <div style={{display: { xs: 'none', lg: 'block'}}}>
+          {/* <div style={{display: { xs: 'none', lg: 'block'}}}>
             <Box>
                 <Box sx={{ display: { xs: 'none', lg: 'block'}}}>
                     {navItems.map((item) => (
@@ -81,14 +81,14 @@ function DrawerAppBar(props) {
                 ))}
                 </Box>
             </Box>
-          </div>
+          </div> */}
           <div style={{flex: 1}}>
 
           </div>
           
         </Toolbar>
       </AppBar>
-      <Box component="nav">
+      {/* <Box component="nav">
         <Drawer
           container={container}
           variant="temporary"
@@ -104,7 +104,7 @@ function DrawerAppBar(props) {
         >
           {drawer}
         </Drawer>
-      </Box>
+      </Box> */}
     </Box>
   );
 }
